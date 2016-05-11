@@ -1,0 +1,40 @@
+== README
+
+# Sample Api Setup
+
+* Ruby version
+    2.3.1
+* Rails version
+    4.2.6
+* Configuration
+    rake db:migrate
+* Database
+    sqlite3
+* Api Endpoints
+
+### Endpoints :
+```
+GET    /api/users
+POST   /api/users
+{
+    "user":
+        {
+            "name":"test User",
+            "email":"test@mailinator.com",
+            "phone_no":"03101334",
+            "gender":"1",
+            "password":"test12"
+        }
+}
+GET    /api/users/:id
+PATCH  /api/users/:id
+PUT    /api/users/:id
+{
+    "user":
+        {
+            "name":"test User2",
+        }
+}
+DELETE /api/users/:id
+GET    /api/dashboard/filters
+```
